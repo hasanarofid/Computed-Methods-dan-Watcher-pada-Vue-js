@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Implementasi Watcher pada form login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="app" class="mx-auto bg-light p-3" style="width:350px">
+        <h2 class="text-center">Form Login | hasanarofid.com</h2>
+        <input type="password" v-model="isi" placeholder="Password" class="form-control mb-1">
+        <input type="password" v-model="isi2" placeholder="Ulangi Password" class="form-control mb-1">
+        <p v-html="keterangan"></p>
+        <input type="submit" value="Daftar" class="btn btn-success btn-block" v-if="tampil">
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="apps2.js"></script>
+</body>
+
+</html>
